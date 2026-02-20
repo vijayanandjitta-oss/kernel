@@ -44,6 +44,9 @@ properties:
       - const: stop-ack
       - const: shutdown-ack
 
+  iommus:
+    maxItems: 1
+
   power-domains:
     minItems: 1
     maxItems: 3
@@ -75,6 +78,12 @@ properties:
     description:
       Qualcomm G-Link subnode which represents communication edge, channels
       and devices related to the ADSP.
+    unevaluatedProperties: false
+
+  cooling:
+    $ref: /schemas/thermal/qcom,qmi-cooling.yaml#
+    description:
+      Cooling subnode which represents the cooling devices exposed by the Modem.
     unevaluatedProperties: false
 
 required:
