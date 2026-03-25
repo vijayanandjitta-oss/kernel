@@ -14,7 +14,6 @@
 #include <linux/lz4.h>
 #include <linux/zstd.h>
 #include <linux/folio_batch.h>
-#include <linux/pagevec.h>
 #include <linux/fserror.h>
 
 #include "f2fs.h"
